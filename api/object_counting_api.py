@@ -119,7 +119,7 @@ def cumulative_object_counting_x_axis(input_video, detection_graph, category_ind
 
                 output_movie.write(input_frame)
                 print ("writing frame")
-                #cv2.imshow('object counting',input_frame)
+                cv2.imshow('object counting',input_frame)
 
                 if cv2.waitKey(1) & 0xFF == ord('q'):
                         break
@@ -238,7 +238,7 @@ def cumulative_object_counting_y_axis(input_video, detection_graph, category_ind
 
                 output_movie.write(input_frame)
                 print ("writing frame")
-                #cv2.imshow('object counting',input_frame)
+                cv2.imshow('object counting',input_frame)
 
                 if cv2.waitKey(1) & 0xFF == ord('q'):
                         break
@@ -419,6 +419,7 @@ def targeted_object_counting(input_video, detection_graph, category_index, is_co
 
                 output_movie.write(input_frame)
                 print ("writing frame")
+                cv2.imshow('targeted object counting',input_frame)
 
                 if cv2.waitKey(1) & 0xFF == ord('q'):
                         break
